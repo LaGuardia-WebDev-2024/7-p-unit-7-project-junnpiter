@@ -6,6 +6,8 @@ void setup() {
 //🎯Variable Declarations Go Here
 var headX = 100;
 var headX2 = 500;
+bodyX = 98;
+bodyX2 = 500;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -15,19 +17,19 @@ draw = function(){
 
   //person 1
   ellipse(headX, 200, 75, 75);
-  line(98, 237, 98, 312);
-  line(98, 312, 75, 352);
-  line(98, 312, 125, 352);
-  line(98, 257, 73, 268);
-  line(98, 257, 125, 268);
+  line(bodyX, 237, 98, 312);
+  line(bodyX, 312, 75, 352);
+  line(bodyX, 312, 125, 352);
+  line(bodyX, 257, 73, 268);
+  line(bodyX, 257, 125, 268);
 
   //person 2
   ellipse(headX2, 200, 75, 75);
-  line(500, 237, 500, 312);
-  line(500, 312, 75, 352);
-  line(500, 312, 125, 352);
-  line(500, 257, 73, 268);
-  line(500, 257, 125, 268);
+  line(bodyX2, 237, 500, 312);
+  line(bodyX2, 312, 522, 359);
+  line(bodyX2, 312, 479, 359);
+  line(bodyX2, 257, 476, 268);
+  line(bodyX2, 257, 526, 268);
 
 
 
