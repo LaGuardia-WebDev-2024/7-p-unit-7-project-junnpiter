@@ -4,10 +4,8 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var headX = 100;
-var headX2 = 500;
-bodyX = 98;
-bodyX2 = 500;
+var x = 100;
+var X2 = 500;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -16,22 +14,22 @@ draw = function(){
   fill(255, 255, 255);
 
   //person 1
-  ellipse(headX, 200, 75, 75);
-  line(bodyX, 237, 98, 312);
-  line(bodyX, 312, 75, 352);
-  line(bodyX, 312, 125, 352);
-  line(bodyX, 257, 73, 268);
-  line(bodyX, 257, 125, 268);
+  ellipse(X, 200, 75, 75);
+  line(X, 237, 98, 312);
+  line(X, 312, 75, 352);
+  line(X, 312, 125, 352);
+  line(X, 257, 73, 268);
+  line(X, 257, 125, 268);
 
   //person 2
-  ellipse(headX2, 200, 75, 75);
-  line(bodyX2, 237, 500, 312);
-  line(bodyX2, 312, 522, 359);
-  line(bodyX2, 312, 479, 359);
-  line(bodyX2, 257, 476, 268);
-  line(bodyX2, 257, 526, 268);
+  ellipse(X2, 200, 75, 75);
+  line(X2, 237, 500, 312);
+  line(X2, 312, 522, 359);
+  line(X2, 312, 479, 359);
+  line(X2, 257, 476, 268);
+  line(X2, 257, 526, 268);
 
-
+X = x + 2;
 
 
 
