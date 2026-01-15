@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
 body {
-  background-color: rgb(37, 150, 190);
+  background-image: url(https://preview.redd.it/dkb-8th-mini-album-urban-ride-tracklist-v0-bed0b5ep7bbd1.jpeg?auto=webp&s=4c8dda4aee027892720212e09455f92b52dea1dd);
   text-align: center;
   color: rgb(224, 244, 247);
 }
@@ -19,5 +19,10 @@ h1{
   font-weight: 400;
   font-size: 50px;
   font-style: normal;
+  background-color: darkred;
+}
+
+p {
+  background-color: darkred;
 }
 

@@ -5,7 +5,11 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var x = 100;
-var X2 = 500;
+var leftArmX = 75;
+var rightArmX = 125;
+var x2 = 500;
+var leftArmX2 = 479;
+var rightArmX2 = 522;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -14,23 +18,39 @@ draw = function(){
   fill(255, 255, 255);
 
   //person 1
-  ellipse(X, 200, 75, 75);
-  line(X, 237, 98, 312);
-  line(X, 312, 75, 352);
-  line(X, 312, 125, 352);
-  line(X, 257, 73, 268);
-  line(X, 257, 125, 268);
+  ellipse(x, 200, 75, 75);
+  line(x, 237, x, 312);
+  line(x, 312, leftArmX, 352);
+  line(x, 312, rightArmX, 352);
+  line(x, 257, leftArmX, 268);
+  line(x, 257, rightArmX, 268);
 
   //person 2
-  ellipse(X2, 200, 75, 75);
-  line(X2, 237, 500, 312);
-  line(X2, 312, 522, 359);
-  line(X2, 312, 479, 359);
-  line(X2, 257, 476, 268);
-  line(X2, 257, 526, 268);
+  ellipse(x2, 200, 75, 75);
+  line(x2, 237, x2, 312);
+  line(x2, 257, leftArmX2, 268);
+  line(x2, 257, rightArmX2, 268);
+  line(x2, 312, leftArmX2, 359);
+  line(x2, 312, rightArmX2, 359);
 
-X = x + 2;
+  //explosion i think
+  ellipse(300, 300, 300, 300)
 
+x = x + 2;
+leftArmX = x - 25;
+rightArmX = x + 25;
+
+x2 = x2 - 2;
+leftArmX2 = x2 + 25;
+rightArmX2 = x2 - 25;
+
+if (x > 300){
+  x = 300
+}
+
+if (x2 < 300){
+  x2 = 300
+}
 
 
   //Show x y values when mousepressed
