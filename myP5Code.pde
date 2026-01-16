@@ -10,6 +10,8 @@ var rightArmX = 125;
 var x2 = 500;
 var leftArmX2 = 479;
 var rightArmX2 = 522;
+var expode = 0;
+var expode2 = 0;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -34,7 +36,10 @@ draw = function(){
   line(x2, 312, rightArmX2, 359);
 
   //explosion i think
-  ellipse(300, 300, 300, 300)
+  fill(255, 30, 0);
+  ellipse(300, 250, expode, expode);
+  fill(255, 75, 0);
+  ellipse(300, 250, expode2, expode2);
 
 x = x + 2;
 leftArmX = x - 25;
@@ -44,14 +49,24 @@ x2 = x2 - 2;
 leftArmX2 = x2 + 25;
 rightArmX2 = x2 - 25;
 
+
+
 if (x > 300){
-  x = 300
+  x = 300;
+  expode = expode + 3;
 }
 
 if (x2 < 300){
   x2 = 300
+  expode2 = expode2 + 2;
 }
 
+if (expode > 400){
+  x = 100;
+  x2 = 500;
+  expode = 0;
+  expode2 = 0;
+}
 
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
